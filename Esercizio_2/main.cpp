@@ -112,11 +112,9 @@ int main(int argc, char ** argv)
             continue;
         }
         cout <<"Dimensione vettore: "<<dimV <<endl;
-        //vector<string> vett_str=crea_vettore_string(dimV);
         vector<double> vett_dou=crea_vettore_double(dimV);
         vector<int> vett_int=crea_vettore_int(dimV);
-        vector<int> ord_int=crea_ordinato(dimV); //caso banale
-        //restituisci_esito(vett_str,n_prove,"stringhe (non ordinato)");
+        vector<int> ord_int=crea_ordinato(dimV);
         restituisci_esito(vett_dou,n_prove,"double (non ordinato)");
         restituisci_esito(vett_int,n_prove,"int (non ordinato)");
         restituisci_esito(ord_int,n_prove,"int (gia' ordinato)");
